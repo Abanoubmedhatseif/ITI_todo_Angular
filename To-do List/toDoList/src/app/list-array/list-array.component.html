@@ -1,0 +1,9 @@
+
+@for ( task of taskService.iterateTasks(); track task) {
+  <div class="form-check d-flex align-items-center">
+      <input class="form-check-input mr-3" type="checkbox" value="" id="flexCheckDefault1">
+      <label class="form-check-label mr-3" for="flexCheckDefault1">{{task}}</label>
+      <button type="button" class="btn btn-secondary btn-sm mr-3" (click)="deleteTask(task)">Delete</button>
+    </div>
+}
+  
